@@ -1,0 +1,38 @@
+@include responsive(1200px) {
+    .action_button {
+        font-size: 16px;
+    }
+}
+
+@include responsive(1000px) {
+    body {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 46px;
+    }
+
+    a, .dropdown button {
+        font-size: 14px;
+    }
+
+    .action_button {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    footer h3 {
+        font-size: 18px;
+    }
+
+    .img_texto {
+        display: inline-block;
+    }
+
+    .img_articulo {
+        max-width: 60%;
+        display: block;
+        margin: 0 auto;
+    }
+}

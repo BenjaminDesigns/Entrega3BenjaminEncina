@@ -1,0 +1,68 @@
+/* styles.scss */
+@import "variables";
+@import "mixins";
+@import "components/fuentes";
+@import "components/header";
+@import "components/footer";
+@import "components/mediaqueries";
+
+/* Estilos generales */
+body {
+    background-color: white;
+    margin: 20px auto;
+    width: 70%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+/* Botones */
+.action_button {
+    background-color: $primary-color;
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 24px;
+    color: white;
+    font-size: 18px;
+    @include hover-state(darken($primary-color, 10%));
+}
+
+.dropdown button {
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-family: $fuente-principal;
+    font-size: 20px;
+    padding-top: 0;
+}
+
+/* Layout */
+.img_texto {
+    display: flex;
+}
+
+.img_articulo {
+    flex: 1;
+    max-width: 40%;
+    border-radius: 100%;
+}
+
+.txt_articulo {
+    flex: 1;
+    padding-left: 50px;
+}
+
+.breadcrumb {
+    padding: 10px 0;
+}

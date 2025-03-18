@@ -1,0 +1,32 @@
+// TÍTULOS 
+
+h1, h2 {
+    font-family: $fuente-secundaria;
+    font-weight: bolder;
+}
+
+h1 {
+    font-size: 54px;
+    margin: 20px 0;
+}
+
+// SUB-TÍTULOS
+
+h2 {
+    font-size: 32px;
+    margin: 20px 0;
+}
+
+h3 {
+    margin-right: 20px;
+}
+
+// PÁRRAFOS
+
+p, a {
+    font-family: $fuente-principal;
+    font-size: 20px;
+    margin: 20px 0;
+    text-decoration: none;
+    color: $color-texto;
+}

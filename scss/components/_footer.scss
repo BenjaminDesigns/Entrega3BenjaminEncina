@@ -1,0 +1,12 @@
+footer {
+    @include flexbox(space-between, center);
+    background-color: $secondary-color;
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: $border-radius;
+    color: $texto-blanco;
+
+    a {
+        color: $texto-blanco;
+    }
+}

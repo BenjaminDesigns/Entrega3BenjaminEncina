@@ -1,0 +1,21 @@
+// PARA FLEXBOX
+@mixin flexbox($justify: center, $align: center, $direction: row) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+// MOUSE ENCIMA
+@mixin hover-state($color) {
+    &:hover {
+        background-color: darken($color, 10%);
+    }
+}
+
+// MEDIAQUERIES
+@mixin responsive($size) {
+    @media (max-width: $size) {
+        @content;
+    }
+} // Tal vez esto pueda ser más óptimo de alguna forma, pero de momento esto me sirve jaja

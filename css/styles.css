@@ -1,0 +1,172 @@
+/* styles.scss */
+h1, h2 {
+  font-family: "Instrument Serif", serif;
+  font-weight: bolder;
+}
+
+h1 {
+  font-size: 54px;
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 32px;
+  margin: 20px 0;
+}
+
+h3 {
+  margin-right: 20px;
+}
+
+p, a {
+  font-family: "Bricolage Grotesque", serif;
+  font-size: 20px;
+  margin: 20px 0;
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background-color: rgb(255, 47, 47);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+nav {
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+nav ul li {
+  display: inline;
+}
+
+.logo_header {
+  height: 30px;
+  filter: invert(1);
+}
+
+.hero_img {
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background-color: rgb(12, 12, 12);
+  margin-top: 40px;
+  padding: 30px;
+  border-radius: 15px;
+  color: white;
+}
+footer a {
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .action_button {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1000px) {
+  body {
+    width: 80%;
+  }
+  h1 {
+    font-size: 46px;
+  }
+  a, .dropdown button {
+    font-size: 14px;
+  }
+  .action_button {
+    text-align: center;
+    font-size: 18px;
+  }
+  footer h3 {
+    font-size: 18px;
+  }
+  .img_texto {
+    display: inline-block;
+  }
+  .img_articulo {
+    max-width: 60%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+/* Estilos generales */
+body {
+  background-color: white;
+  margin: 20px auto;
+  width: 70%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+/* Botones */
+.action_button {
+  background-color: rgb(255, 47, 47);
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 24px;
+  color: white;
+  font-size: 18px;
+}
+.action_button:hover {
+  background-color: #c80000;
+}
+
+.dropdown button {
+  background-color: transparent;
+  border: none;
+  color: black;
+  font-family: "Bricolage Grotesque", serif;
+  font-size: 20px;
+  padding-top: 0;
+}
+
+/* Layout */
+.img_texto {
+  display: flex;
+}
+
+.img_articulo {
+  flex: 1;
+  max-width: 40%;
+  border-radius: 100%;
+}
+
+.txt_articulo {
+  flex: 1;
+  padding-left: 50px;
+}
+
+.breadcrumb {
+  padding: 10px 0;
+}
+
+/*# sourceMappingURL=styles.css.map */
