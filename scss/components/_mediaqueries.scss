@@ -9,12 +9,17 @@
         width: 80%;
     }
 
+    .categorias {
+        flex-direction: column;
+    }
+
     h1 {
         font-size: 46px;
     }
 
     a, .dropdown button {
         font-size: 14px;
+        margin: 2px;
     }
 
     .action_button {

@@ -15,6 +15,7 @@ h2 {
 }
 
 h3 {
+  font-family: "Instrument Serif", serif;
   margin-right: 20px;
 }
 
@@ -73,6 +74,14 @@ footer {
 }
 footer a {
   color: white;
+  padding-left: 10px;
+}
+footer .redsocial {
+  display: inline-block;
+  transition: transform 0.5s ease;
+}
+footer .redsocial:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width: 1200px) {
@@ -84,11 +93,15 @@ footer a {
   body {
     width: 80%;
   }
+  .categorias {
+    flex-direction: column;
+  }
   h1 {
     font-size: 46px;
   }
   a, .dropdown button {
     font-size: 14px;
+    margin: 2px;
   }
   .action_button {
     text-align: center;
@@ -106,8 +119,29 @@ footer a {
     margin: 0 auto;
   }
 }
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+    filter: blur(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+@keyframes subir {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
 /* Estilos generales */
 body {
+  animation: aparecer 0.8s ease-out;
   background-color: white;
   margin: 20px auto;
   width: 70%;
@@ -126,6 +160,15 @@ nav ul li {
   display: inline;
 }
 
+.categorias {
+  display: flex;
+  gap: 2px;
+}
+
+a {
+  flex: 1;
+}
+
 /* Botones */
 .action_button {
   background-color: rgb(255, 47, 47);
@@ -138,6 +181,9 @@ nav ul li {
 }
 .action_button:hover {
   background-color: #c80000;
+}
+.action_button:hover {
+  animation: subir 0.5s ease forwards;
 }
 
 .dropdown button {
