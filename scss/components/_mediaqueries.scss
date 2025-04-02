@@ -32,12 +32,22 @@
     }
 
     .img_texto {
-        display: inline-block;
-    }
+        flex-direction: column;
 
-    .img_articulo {
-        max-width: 60%;
-        display: block;
-        margin: 0 auto;
+        .img_articulo {
+            min-width: 15%;
+            height: auto;
+            margin: auto;
+        }
+
+        .txt_articulo {
+            min-width: 90%;
+        }
+    }
+}
+
+@include responsive(600px) {
+    p {
+        font-size: 16px;
     }
 }

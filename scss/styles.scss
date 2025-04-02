@@ -66,17 +66,18 @@ a {
 /* Layout */
 .img_texto {
     display: flex;
-}
 
-.img_articulo {
-    flex: 1;
-    max-width: 40%;
-    border-radius: 100%;
-}
+    
+    .img_articulo {
+        width: auto;
+        height: 300px;
+    }
 
-.txt_articulo {
-    flex: 1;
-    padding-left: 50px;
+    .txt_articulo {
+        padding-left: 80px;
+        width: 60%;
+    }
+
 }
 
 .breadcrumb {
