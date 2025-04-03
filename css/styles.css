@@ -115,6 +115,8 @@ footer .redsocial:hover {
   }
   .img_texto .img_articulo {
     min-width: 15%;
+    max-width: 100%;
+    aspect-ratio: 1/1;
     height: auto;
     margin: auto;
   }
@@ -125,6 +127,13 @@ footer .redsocial:hover {
 @media (max-width: 600px) {
   p {
     font-size: 16px;
+  }
+  .txt_articulo {
+    padding-left: 0px;
+    width: 60%;
+  }
+  .img_texto {
+    text-align: center;
   }
 }
 @keyframes aparecer {
